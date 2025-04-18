@@ -6,4 +6,5 @@ public:
        }
         sort(nums1.begin(),nums1.end());
     }
+    //  here there is no need to return as the function type is void \U0001f618
 };

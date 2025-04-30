@@ -6,6 +6,7 @@ public:
         isPrime[0] = isPrime[1] = false;  // 0 and 1 are not prime numbers
         for (int i = 2; i * i < n; i++) {
             if (isPrime[i]) {
+                  // mark their multiples false as they are composite numbers
                 for (int j = i * i; j < n; j += i) {
                     isPrime[j] = false;
                 }
@@ -17,7 +18,6 @@ public:
             if (isPrime[i])
                 count++;
         }
-
         return count;
     }
 };

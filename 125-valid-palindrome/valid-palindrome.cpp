@@ -3,7 +3,7 @@ public:
     bool isPalindrome(string s) {
         string filtered = "";
         for (char c : s) {
-            if ((isalpha(c) || isdigit(c))) {  // to check if a character is a letter.
+            if ((isalpha(c) || isdigit(c))) { 
                 filtered += tolower(c);
             }
         }  
@@ -15,8 +15,7 @@ public:
             }
             left++;
             right--;
-        }
-        
+        }        
         return true;
     }
 };

@@ -5,7 +5,7 @@ public:
         int maxEle = 0;
         for(int i=0;i<gain.size();i++){
             netGain = netGain + gain[i];
-            gain[i] = netGain;
+          
             if(maxEle < netGain){
                 maxEle = netGain;
             };

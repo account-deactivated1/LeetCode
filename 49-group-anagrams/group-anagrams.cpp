@@ -8,7 +8,7 @@ public:
             anagrams[key].push_back(s);
         }
         vector<vector<string>> result;
-        for (auto& pair : anagrams) {
+        for (auto pair : anagrams) {
             result.push_back(pair.second);
         }
         return result;

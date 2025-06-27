@@ -1,8 +1,6 @@
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
-        if (s.length() != t.length()) return false;
-
         int sChar[256] = {0};
         int tChar[256] = {0};
 
@@ -10,7 +8,6 @@ public:
             char c1 = s[i];
             char c2 = t[i];
 
-            // +1 because default values are 0, and index can also be 0
             if (sChar[c1] != tChar[c2])
                 return false;
 
